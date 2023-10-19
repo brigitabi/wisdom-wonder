@@ -1,8 +1,13 @@
 import React from 'react'
+import Main from '../components/Main'
+import Categories from '../components/Categories'
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <div>
+        <Main />
+        <Categories title='Category'/>
+    </div>
   )
 }
 

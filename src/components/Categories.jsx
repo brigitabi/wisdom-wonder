@@ -1,0 +1,77 @@
+import React, { useState } from 'react';
+import { data } from '../data/data';
+
+const Categories = () => {
+    const [categories, setCategories] = useState(data);
+
+    // filtering categories
+    const filterType = (category) => { 
+        setCategories(
+            data.filter((item) => { 
+                return item.category === category
+            })
+        )
+    }
+
+    // Filter by price
+    const filterPrice = (price) => { 
+        setCategories(
+            data.filter((item) => {
+                return item.price === price;
+            })
+        )
+    }
+
+
+  return (
+    <div className="max-w-[1640px] m-auto px-4 py-12">
+      <h1 className="font-bold text-4xl text-center">Browse by Categories</h1>
+
+      {/* Filter Row  */}
+      <div className="flex flex-col lg:flex-row justify-between">
+        {/* Filter Type */}
+        <div>
+          <p className='font-bold text-green-800 m-1'>Filter Type</p>
+          <div className='flex justify-between flex-wrap'>
+            <button onClick={() => setCategories(data)} className='m-1 border-green-700  hover:bg-green-300 font-bold'> All </button>
+            <button onClick={() => filterType('physical')} className='m-1 border-green-700  hover:bg-green-300 font-bold'> Physical </button>
+            <button onClick={() => filterType('social')} className='m-1 border-green-700  hover:bg-green-300 font-bold'> Social </button>
+            <button onClick={() => filterType('culinary')} className='m-1 border-green-700  hover:bg-green-300 font-bold'> Culinary </button>
+            <button onClick={() => filterType('technology')} className='m-1 border-green-700  hover:bg-green-300 font-bold'> Technology </button>
+            <button onClick={() => filterType('humor')} className='m-1 border-green-700  hover:bg-green-300 font-bold'> Humor </button>
+          </div>
+        </div>
+
+        {/* Filter Price */}
+        <div>
+          <p className='font-bold text-green-800 m-1'>Filter Price</p>
+          <div className='flex justify-between max-w-[390px] w-full'>
+            <button onClick={() => filterPrice('$')} className='m-1 border-green-700  hover:bg-green-300 font-bold'>$</button>
+            <button onClick={() => filterPrice('$$')}  className='m-1 border-green-700  hover:bg-green-300 font-bold'>$$</button>
+            <button onClick={() => filterPrice('$$$')}  className='m-1 border-green-700  hover:bg-green-300 font-bold'>$$$</button>
+            <button onClick={() => filterPrice('$$$$')}  className='m-1 border-green-700  hover:bg-green-300 font-bold'>$$$$</button>
+          </div>
+        </div>
+      </div>
+
+        {/* Display categories  */}
+      <div className='grid grid-cols-2 lg:grid-cols-4 gap-6 pt-4'> 
+        {categories.map((item, index) => (
+            <div key={index} className='border shadow-lg hover:scale-105 duration-300 rounded-lg'>
+                <img src={item.image} alt={item.name}
+                className='w-full h-[200px] object-cover rounded-t-lg'
+                />
+                <div className='flex justify-between px-2 py-4'>
+                    <p className='font-bold'>{item.name}</p>
+                    <p>
+                        <span className='bg-green-900 text-white rounded-full p-1'>{item.price}</span>
+                    </p>
+                </div>
+            </div>
+        ) )}
+      </div>
+    </div>
+  );
+};
+
+export default Categories;
