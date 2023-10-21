@@ -22,7 +22,7 @@ const Main = () => {
           </h1>
           <p className="w-full md:max-w-[70%] lg:max-w-[50%] xl:max-w-[35%] pt-12 text-xl font-bold text-black">
             Each day is an opportunity for discovery.
-            <p className='w-full md:max-w-[80%] lg:max-w-[70%] xl:max-w-[70%] pt-4  font-bold'>
+            <p className="w-full md:max-w-[80%] lg:max-w-[70%] xl:max-w-[70%] pt-4  font-bold">
               Wisdom Wonder is here to unlock the potential of the elderly every
               day, together with us.
             </p>

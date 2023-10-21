@@ -5,26 +5,18 @@ import { NavLink } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <div className="w-full mt-24 bg-blue-950 text-gray-300 py-2 px-2">
+    <div className="w-full mt-24 bg-green-950 text-gray-300 py-2 px-2">
       <div className="max-w-[1400px] mx-auto grid grid-cols-2 md:grid-cols-6 border-b-2 border-gray-600 py-8 px-4">
         <div>
-          <h6 className="font-bold uppercase pt-2">Solutions</h6>
+          <h6 className="font-bold uppercase pt-2">Live at Wisdom Wonder</h6>
           <ul className="mt-2">
-            <li className="py-1">All Services</li>
-            <li className="py-1">Booking</li>
-            <li className="py-1">Interior</li>
+            <li className="py-1">Our Offer</li>
+            <li className="py-1">Type of Activities</li>
+            <li className="py-1">tories</li>
             <li className="py-1">Exterior</li>
           </ul>
         </div>
-        <div>
-          <h6 className="font-bold uppercase pt-2">Support</h6>
-          <ul className="mt-2">
-            <li className="py-1">Pricing</li>
-            <li className="py-1">Documentation</li>
-            <li className="py-1">Tours</li>
-            <li className="py-1">Refunds</li>
-          </ul>
-        </div>
+  
         <div>
           <h6 className="font-bold uppercase pt-2">Company</h6>
           <ul className="mt-2">
