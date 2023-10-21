@@ -16,7 +16,6 @@ const Footer = () => {
             <li className="py-1">Exterior</li>
           </ul>
         </div>
-  
         <div>
           <h6 className="font-bold uppercase pt-2">Company</h6>
           <ul className="mt-2">
