@@ -1,10 +1,35 @@
 import React, { useState } from 'react';
 import { data } from '../data/data';
 import { FaHeart, FaRegHeart } from 'react-icons/fa';
+import { UserAuth } from '../context/AuthContext';
+import { db } from '../firebase';
+import { arrayUnion, doc, updateDoc } from 'firebase/firestore';
+import { v4 as uuidv4 } from 'uuid';
 
-const Categories = () => {
+const Categories = ({ item }) => {
   const [categories, setCategories] = useState(data);
+
+  const [saved, setSaved] = useState(false);
   const [like, setLike] = useState(false);
+  const { user } = UserAuth();
+
+  const activityID = doc(db, 'users', `${user?.email}`);
+
+  const saveActivity = async () => {
+    if (user?.email) {
+      setLike(!like);
+      setSaved(true);
+      await updateDoc(activityID, {
+        savedActivities: arrayUnion({
+          id: uuidv4(),
+          // name: item.name,
+          // img: item.image,
+        }),
+      });
+    } else {
+      alert('Please log in to save an activity! :)');
+    }
+  };
 
   // filtering categories
   const filterType = (category) => {
@@ -129,7 +154,7 @@ const Categories = () => {
               alt={item.name}
               className="w-full h-[200px] object-cover rounded-t-lg"
             />
-            <p>
+            <p onClick={saveActivity}>
               {like ? (
                 <FaHeart className="absolute top-4 left-4 text-gray-100" />
               ) : (
