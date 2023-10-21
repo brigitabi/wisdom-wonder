@@ -1,6 +1,6 @@
 import React from 'react';
-import { IoIosKey } from 'react-icons/io'
- 
+import { IoIosKey } from 'react-icons/io';
+
 const Main = () => {
   return (
     <div className="w-full h-[550px]">
@@ -18,7 +18,7 @@ const Main = () => {
             Unlocking{' '}
             <span className="text-green-500 font-bold flex items-center">
               the potential of every day
-              <IoIosKey className='text-green ml-4' size={40}/>
+              <IoIosKey className="text-green ml-4" size={40} />
             </span>
           </h1>
           <p className="w-full md:max-w-[70%] lg:max-w-[50%] xl:max-w-[35%] pt-12 text-xl font-bold text-white">
