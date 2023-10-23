@@ -18,7 +18,7 @@ const Navbar = () => {
   return (
     <div className="flex items-center justify-between p-4 z-[100] w-full absolute">
       <Link to="/">
-        <h1 className="text-white text-4xl font-bold cursor-pointer">
+        <h1 className="text-white text-xl font-bold cursor-pointer">
           Wisdom Wonder
         </h1>
       </Link>
@@ -37,13 +37,13 @@ const Navbar = () => {
           </button>
         </div>
       ) : (
-        <div>
+        <div className=''>
           <Link to="/login">
-            <button className="text-white pr-4">Sign In</button>
+            <button className="text-white pr-4 text-sm">Sign In</button>
           </Link>
 
           <Link to="/signup">
-            <button className="bg-green-700 text-white px-6 py-2 rounded cursor-pointer">
+            <button className="bg-green-700 text-white px-4 py-2 rounded cursor-pointer text-sm">
               Sign Up
             </button>
           </Link>

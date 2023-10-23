@@ -3,9 +3,9 @@ import React from 'react';
 const About = () => {
   return (
     <div className="">
-      <div className="flex flex-row justify-around space-x-12 pt-12">
-        <p className="text-4xl font-bold ml-4 underline">About</p>
-        <p className="text-2xl font-bold px-6">
+      <div className="flex flex-col justify-around pt-12">
+        <p className="text-4xl font-bold ml-4 underline text-center">About</p>
+        <p className="text-xl font-bold py-8 text-justify px-4">
           Wisdom wonder is on a mission to enhance the quality of life for
           seniors and pensioners through compassion connection and support.
         </p>
@@ -13,7 +13,7 @@ const About = () => {
 
       {/* images   */}
       <div className="m-4 pt-12">
-        <div className="h-[450px] w-[450px] object-cover flex px-4 space-x-12 ml-12">
+        <div className="h-[250px] w-[250px] object-cover flex px-4 space-x-12 ml-12">
           <img
             className="rounded-md hover:scale-105 duration-300"
             src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -23,11 +23,11 @@ const About = () => {
 
         {/* our vision  */}
         <div className="py-12 px-4 md:px-8">
-          <div className="">
+          <div className="text-justify">
             <p className="mb-4">
               Each day is an opportunity for discovery. Wisdom Wonder is here to
               unlock the potential of the elderly every day, together with us.
-              
+
               Founded in 2023, Wisdom Wonder is a passionate endeavor dedicated
               to enhancing the golden years of life. We understand the inherent
               value and immense potential that elders carry within them, and we
