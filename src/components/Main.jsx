@@ -14,20 +14,10 @@ const Main = () => {
           alt="activity"
         />
         <div className="absolute w-full top-[20%] p-4 md:p-8">
-          <h1 className="text-3xl text-bold text-green-500 font-bold md:text-5xl mb-10 flex flex-row px-2">
-            Unlocking{' '}
-            <span className="text-green-500 font-bold flex items-center">
-              the potential of every day
-              <IoIosKey className="text-green ml-4" size={40} />
-            </span>
+          <h1 className="text-3xl text-bold text-green-600 font-bold md:text-5xl flex flex-row">
+            Unlocking the potential of every day
+            <IoIosKey className="text-green ml-4" size={40} />
           </h1>
-          <p className="w-full md:max-w-[70%] lg:max-w-[50%] xl:max-w-[35%] pt-12 text-xl font-bold text-white">
-            Each day is an opportunity for discovery.
-            <p className="w-full md:max-w-[80%] lg:max-w-[70%] xl:max-w-[70%] pt-4  font-bold text-white">
-              Wisdom Wonder is here to unlock the potential of the elderly every
-              day, together with us.
-            </p>
-          </p>
         </div>
       </div>
     </div>

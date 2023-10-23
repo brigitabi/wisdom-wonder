@@ -15,15 +15,15 @@ const Categories = ({ item }) => {
 
   const activityID = doc(db, 'users', `${user?.email}`);
 
-  const saveActivity = async () => {
+  const saveActivity = async (item) => {
     if (user?.email) {
       setLike(!like);
       setSaved(true);
       await updateDoc(activityID, {
         savedActivities: arrayUnion({
           id: uuidv4(),
-          // name: item.name,
-          // img: item.image,
+          name: item.name,
+          image: item.image,
         }),
       });
     } else {
@@ -154,7 +154,7 @@ const Categories = ({ item }) => {
               alt={item.name}
               className="w-full h-[200px] object-cover rounded-t-lg"
             />
-            <p onClick={saveActivity}>
+            <p onClick={() => saveActivity(item)}>
               {like ? (
                 <FaHeart className="absolute top-4 left-4 text-gray-100" />
               ) : (
