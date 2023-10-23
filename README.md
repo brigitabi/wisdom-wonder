@@ -8,6 +8,7 @@ See the deployed website [here](https://wisdom-wonder.vercel.app/).
 - React: Frontend development using React for building the user interface.
 - Firebase: Utilizes Firebase for backend services, including database and authentication.
 - Images from Unsplash. 
+- Vercel: For deploying the website.
 - Styling: Tailwind.
 
 ### Installation 

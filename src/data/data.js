@@ -33,7 +33,7 @@ export const data = [
     },
     {
       id: 5,
-      name: 'Chess',
+      name: 'Chess competition',
       category: 'social',
       image:
         'https://images.unsplash.com/photo-1513159446162-54eb8bdaa79b?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
@@ -57,7 +57,7 @@ export const data = [
     },
     {
       id: 8,
-      name: 'Pancakes',
+      name: 'Lets make pancakes together',
       category: 'culinary',
       image:
         'https://images.unsplash.com/photo-1620108094398-f8d5379369c1?auto=format&fit=crop&q=80&w=2028&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
@@ -81,7 +81,7 @@ export const data = [
     },
     {
       id: 11,
-      name: 'How to work with computer',
+      name: 'Computer tips and tricks',
       category: 'technology',
       image:
         'https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?auto=format&fit=crop&q=80&w=1964&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
@@ -105,7 +105,7 @@ export const data = [
     },
     {
       id: 14,
-      name: 'Ceremony',
+      name: 'Humor story telling',
       category: 'humor',
       image:
         'https://plus.unsplash.com/premium_photo-1675369488391-f3dd6bc88105?auto=format&fit=crop&q=80&w=2072&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
@@ -113,12 +113,37 @@ export const data = [
     },
     {
       id: 15,
-      name: 'Humor story telling',
+      name: 'Suprise prank',
       category: 'humor',
       image:
         'https://plus.unsplash.com/premium_photo-1681883920602-1383de1cd97d?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       price: '$',
     },
+    {
+      id: 15,
+      name: 'Lets read news together',
+      category: 'reading',
+      image:
+        'https://plus.unsplash.com/premium_photo-1683121099108-3bd7cff68736?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      price: '$',
+    },
+    {
+      id: 15,
+      name: 'Book swap club',
+      category: 'reading',
+      image:
+        'https://images.unsplash.com/photo-1675179181234-aa537607528b?auto=format&fit=crop&q=80&w=2063&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      price: '$$',
+    },
+    {
+      id: 15,
+      name: 'Book discussion a guest author',
+      category: 'reading',
+      image:
+        'https://plus.unsplash.com/premium_photo-1661337075187-53e7c0976b12?auto=format&fit=crop&q=80&w=1974&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      price: '$$$$',
+    },
+
   ];
   
 //   

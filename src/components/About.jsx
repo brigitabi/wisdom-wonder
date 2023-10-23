@@ -13,7 +13,7 @@ const About = () => {
 
       {/* images   */}
       <div className="m-4 pt-12">
-        <div className="h-[250px] w-[250px] object-cover flex px-4 space-x-12 ml-12">
+        <div className="h-[300px] w-[300px] object-cover flex px-4 space-x-12 ml-12">
           <img
             className="rounded-md hover:scale-105 duration-300"
             src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"

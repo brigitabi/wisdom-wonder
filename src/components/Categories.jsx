@@ -63,8 +63,8 @@ const Categories = ({ item }) => {
       <div className="flex flex-col lg:flex-row justify-between">
         {/* Filter Type */}
         <div>
-          <p className="font-bold text-green-800 m-1">Filter Type</p>
-          <div className="flex justify-between flex-wrap">
+          <p className="font-bold text-green-800 py-4">Filter Type</p>
+          <div className="flex justify-between flex-wrap space-x-2 underline">
             <button
               onClick={() => setCategories(data)}
               className="m-1 border-green-700  hover:bg-green-300 font-bold"
@@ -107,13 +107,20 @@ const Categories = ({ item }) => {
               {' '}
               Humor{' '}
             </button>
+            <button
+              onClick={() => filterType('reading')}
+              className="m-1 border-green-700  hover:bg-green-300 font-bold"
+            >
+              {' '}
+              Reading{' '}
+            </button>
           </div>
         </div>
 
         {/* Filter Price */}
         <div>
-          <p className="font-bold text-green-800 m-1">Filter Price</p>
-          <div className="flex justify-between max-w-[390px] w-full">
+          <p className="font-bold text-green-800 py-4">Filter Price</p>
+          <div className="flex justify-between max-w-[390px] w-full underline">
             <button
               onClick={() => filterPrice('$')}
               className="m-1 border-green-700  hover:bg-green-300 font-bold"
